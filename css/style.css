@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  font-family: Merienda, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+h1 {
+  border: 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 0;
+  width: 94%;
+  padding: 5px;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 1px;
+  width: 94%;
+}
+
+li {
+  border: 2px solid black;
+  padding: 10px;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 94%;
+}
+
+article {
+  flex: 1 1 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+header ul {
+  margin-top: 1px;
+}
+p {
+  padding: 0 2px 0 2px;
+}
+
+/* extra small */
+@media screen and (max-width: 600px) {
+  ul :last-child {
+    flex-basis: 100%;
+  }
+}
+/* small 600px */
+@media screen and (min-width: 600px) {
+  li {
+    padding: 8px;
+  }
+  p {
+    font-size: 16pt;
+  }
+}
+
+/* medium */
+@media screen and (min-width: 900px) {
+  h2 {
+    font-size: 14pt;
+    margin: 20px 0 5px 0;
+  }
+  p {
+    font-size: 10pt;
+    margin: 0 0 10px 0;
+  }
+  article {
+    flex: 1 1 50%;
+  }
+  header {
+    border-top: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+  }
+  header h1 {
+    flex: 1 1 15%;
+    font-size: 18pt;
+    font-weight: 700;
+
+    margin: 0;
+    padding: 0;
+    font-size: 19pt;
+    font-weight: 400;
+  }
+  header nav {
+    flex: 1 1 50%;
+    display: flex;
+  }
+  header nav ul {
+    width: 91%;
+    margin: 0;
+  }
+  ul li {
+    padding: 5px 10px 5px 10px;
+  }
+
+  ul li a {
+    font-size: 9pt;
+    font-weight: 700;
+  }
+}
+
+/* large */
+@media screen and (min-width: 1200px) {
+  article {
+    flex-basis: 33%;
+  }
+  header nav {
+    flex: 1 1 48%;
+  }
+  ul li {
+    padding: 5px 10px 5px 10px;
+  }
+}
+
+/* extra large */
+@media screen and (min-width: 1700px) {
+  article {
+    flex: 0 1 25%;
+    border: 1px solid black;
+  }
+  article h2 {
+    position: absolute;
+    background-color: white;
+    opacity: 0.6;
+    width: 100%;
+    color: black;
+  }
+  p {
+    padding: 0 5px 0 5px;
+  }
+  header {
+    padding-bottom: 20px;
+  }
+}
