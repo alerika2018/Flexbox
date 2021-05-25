@@ -7,7 +7,7 @@ h1 {
   border: 2px solid black;
   margin-top: 5px;
   margin-bottom: 0;
-  width: 94%;
+  /* width: 94%; */
   padding: 5px;
 }
 nav ul {
@@ -15,7 +15,7 @@ nav ul {
   flex-wrap: wrap;
   list-style-type: none;
   gap: 1px;
-  width: 94%;
+  /* width: 94%; */
 }
 
 li {
@@ -33,7 +33,7 @@ a {
 main {
   display: flex;
   flex-wrap: wrap;
-  width: 94%;
+  /* width: 94%; */
 }
 
 article {
